@@ -29,31 +29,31 @@ body {
 .container {
   background-color: var(--container-bg-color);
   width: 80%;
-  max-width: 865px;
-  margin: 100px auto;
-  padding: 40px;
+  max-width: 54.063rem;
+  margin: 6.25rem auto;
+  padding: 2.5rem;
   text-align: justify;
-  border-radius: 20px;
-  box-shadow: 0 0 20px var(--container-shadow-color);
+  border-radius: 1.25rem;
+  box-shadow: 0 0 1.25rem var(--container-shadow-color);
 }
 
 /* Title styles */
 .header__title {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* Paragraph styles */
 .content__text {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* Image styles */
 .content__image {
   width: 100%;
   height: auto;
-  max-width: 450px;
-  margin-bottom: 20px;
+  max-width: 28.125rem;
+  margin-bottom: 1.25rem;
   opacity: 0;
   transition: all 0.8s;
 }
@@ -61,13 +61,13 @@ body {
 /* Images that are aligned to the left */
 .content__image--left {
   float: left;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 /* Images that are aligned to the right */ 
 .content__image--right {
   float: right;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 /* Moves the images to the left */
