@@ -1,0 +1,27 @@
+/* Root variables for easier color and style customization */
+:root {
+  --background-color: rgb(105, 25, 25);
+  --container-bg-color: rgb(220, 220, 200);
+}
+
+/* Universal reset to eliminate default padding, margin, and border-box model */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures border and padding do not affect element width/height */
+}
+
+/* Basic body styles, 1rem = 16px */
+body {
+  background-color: var(--background-color);
+}
+
+/* Container styles */
+.container {
+  background-color: var(--container-bg-color);
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 40px;
+}
