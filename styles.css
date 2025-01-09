@@ -1,7 +1,7 @@
 /* Root variables for easier color and style customization */
 :root {
-  --background-color: rgb(105, 25, 25);
-  --container-bg-color: rgb(220, 220, 200);
+  --container-bg-color: rgb(238, 235, 227);
+  --container-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Universal reset to eliminate default padding, margin, and border-box model */
@@ -15,13 +15,55 @@
 
 /* Basic body styles, 1rem = 16px */
 body {
+  background-image: url('images/background-img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8125rem;
+  font-size: clamp(0.8125rem, 0.725rem + 0.43750000000000006vw, 1.25rem);
 }
 
 /* Container styles */
 .container {
   background-color: var(--container-bg-color);
-  max-width: 700px;
+  width: 80%;
+  max-width: 865px;
   margin: 100px auto;
   padding: 40px;
+  text-align: justify;
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--container-shadow-color);
+}
+
+/* Title styles */
+.header__title {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+.content__text {
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+.content__image {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+/* Images that are aligned to the left */
+.content__image--left {
+  float: left;
+  margin-right: 20px;
+}
+
+/* Images that are aligned to the right */ 
+.content__image--right {
+  float: right;
+  margin-left: 20px;
 }
