@@ -54,6 +54,8 @@ body {
   height: auto;
   max-width: 450px;
   margin-bottom: 20px;
+  opacity: 0;
+  transition: all 0.8s;
 }
 
 /* Images that are aligned to the left */
@@ -66,4 +68,20 @@ body {
 .content__image--right {
   float: right;
   margin-left: 20px;
+}
+
+/* Moves the images to the left */
+.content__image.content__image--left {
+  transform: translateX(-30%) scale(0.95);
+}
+
+/* Moves the images to the right */
+.content__image.content__image--right {
+  transform: translateX(30%) scale(0.95);
+}
+
+/* Moves the images back in place */
+.content__image.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
 }
